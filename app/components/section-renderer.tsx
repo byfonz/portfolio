@@ -29,14 +29,14 @@ export function SectionRenderer({ section, post }: Props) {
   const tab = section.type
 
   return (
-   <Tabs className="w-full">
+   <Tabs orientation="horizontal" className="w-full">
       <TabsList>
-        <TabsTrigger value={title}>
+        <TabsTrigger value={section._key}>
           {title}
         </TabsTrigger>
       </TabsList>
 
-      <TabsContent value={tab}>
+      <TabsContent value={section._key}>
         <Card>
           <CardContent>
             <Component section={section} post={post} />

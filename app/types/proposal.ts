@@ -1,8 +1,8 @@
-import { SectionType } from "./section";
+import { Section } from "./section";
 
 export type PostType = {
   _id: string;
   title: string;
   slug: string;
-  sections: SectionType[];
+  sections: Section[];
 }
